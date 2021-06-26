@@ -64,5 +64,5 @@ sed -r -i \
 ./BaseTools/BinWrappers/PosixLike/build -t GCC5 -a IA32 -a X64 -p OvmfPkg/OvmfPkgIa32X64.dsc -n $(nproc) -b RELEASE -D FD_SIZE_2MB -D SMM_REQUIRE -D SECURE_BOOT_ENABLE -D HTTP_BOOT_ENABLE -D TLS_ENABLE -D NETWORK_IP6_ENABLE -D TPM2_ENABLE -D TPM2_CONFIG_ENABLE -D EXCLUDE_SHELL_FROM_FD
 
 # Copy to host build dir
-cp ${SRC_DIR}/Build/Ovmf3264/RELEASE_GCC5/FV/OVMF_CODE.fd /build
-cp ${SRC_DIR}/Build/Ovmf3264/RELEASE_GCC5/FV/OVMF_VARS.fd /build
+cp ${SRC_DIR}/Build/Ovmf3264/RELEASE_GCC5/FV/OVMF*.fd /build
+# cp ${SRC_DIR}/Build/Ovmf3264/RELEASE_GCC5/FV/OVMF_VARS.fd /build
