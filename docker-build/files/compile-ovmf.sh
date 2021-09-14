@@ -21,7 +21,7 @@ mkdir -p bin
 ln -sf /usr/bin/python2.7 bin/python
 git pull
 #git checkout vUDK2018
-git checkout e1999b2
+git checkout 7b4a99b
 git pull --recurse-submodules
 git submodule update --recursive
 
