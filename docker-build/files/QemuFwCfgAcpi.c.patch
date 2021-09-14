@@ -3,14 +3,14 @@ index a0b1cfd2be..660007a74e 100644
 --- a/OvmfPkg/AcpiPlatformDxe/QemuFwCfgAcpi.c
 +++ b/OvmfPkg/AcpiPlatformDxe/QemuFwCfgAcpi.c
 @@ -24,6 +24,8 @@
- #include <Library/UefiBootServicesTableLib.h> // gBS
-
- #include "AcpiPlatform.h"
+ #include <Library/PcdLib.h>
+ #include <Library/OrderedCollectionLib.h>
+ #include <IndustryStandard/Acpi.h>
 +#include "vrom.h"
 +#include "vrom_table.h"
  
+ 
  //
- // The user structure for the ordered collection that will track the fw_cfg
 @@ -1107,6 +1110,77 @@ InstallQemuFwCfgTables (
        }
      }
