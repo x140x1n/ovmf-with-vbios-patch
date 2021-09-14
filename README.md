@@ -8,3 +8,4 @@ Additionally, adds support for Intel GVT-g / RAMFB, which finally allows emulati
 
 Tested and confirmed to work on Dell XPS 15 (9570).
 
+Also, tested and confirmed to work on Monster Abra A5 v14.1 (Tongfang GK5CN5Z rebrand)
