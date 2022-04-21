@@ -3,8 +3,9 @@ name: ovmf-with-vbios
 on:
   push:
   pull_request:
-  schedule:
-    - cron: '0 0 * * *'
+  workflow_dispatch:
+#  schedule:
+#    - cron: '0 0 * * *'
 
 jobs:
   remove-old-artifacts:
