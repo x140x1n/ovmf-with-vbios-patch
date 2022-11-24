@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:jammy
 LABEL maintainer="bitthief@pm.me"
 
 RUN apt-get -qq -y update && \
