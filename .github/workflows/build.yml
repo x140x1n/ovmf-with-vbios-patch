@@ -34,6 +34,10 @@ jobs:
     - uses: actions/checkout@v2.5.0
       with:
         fetch-depth: 0
+    - name: Clean untracked files
+      run: git clean -fdx
+    - name: Update submodules
+      run: git submodule update --init --recursive --force      
     - name: Build patched OVMF
       run: |
         ./bin/build.sh
